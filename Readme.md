@@ -16,7 +16,10 @@ A browser-based terminal nameplate generator. Enter any name (up to 10 character
 ## 📸 Preview
 
 ![Preview](./assets/screenshot.png)
-![Demo](./assets/neofetch-demo.gif)
+
+<div align="center">
+  <img src="./assets/neofetch-demo.gif" alt="Demo" />
+</div>
 
 The animation also records beautifully as a GIF — great for GitHub profile READMEs, portfolio pages, or sharing on social. To capture it:
 
@@ -42,6 +45,7 @@ Hit **↺ replay** before recording so the animation starts fresh from the begin
 
 ## 📁 File Structure
 
+```
 neofetch-generator/
 ├── index.html        # App shell — layout, inputs, terminal panel
 ├── style.css         # All styling — terminal theme, panels, controls
@@ -49,6 +53,7 @@ neofetch-generator/
     ├── font.js       # A–Z Unicode box-drawing letter map (data only)
     ├── renderer.js   # Stitches letters into 6-row ASCII art arrays
     └── animation.js  # Step engine, color, copy, download, validation
+```
 
 ## 🛠️ Tech Used
 
