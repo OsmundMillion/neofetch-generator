@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neofetch Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="page">
+
+    <header class="page-header">
+      <div class="page-title-accent">// terminal</div>
+      <h1 class="page-title">Neofetch Generator</h1>
+      <p class="page-subtitle">Type your name. Pick a color. Watch it render.</p>
+    </header>
+
+    <div class="panels">
+
+      <!-- ── Controls ── -->
+      <aside class="controls">
+
+        <div class="control-group">
+          <label class="control-label" for="name-input">Name</label>
+          <input
+            class="control-input"
+            id="name-input"
+            type="text"
+            maxlength="10"
+            placeholder="OSMUND"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <div class="input-meta">
+            <span class="key-hint">↵ enter to generate</span>
+            <span class="char-hint" id="char-hint">0 / 10</span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="tagline-input">Tagline</label>
+          <input
+            class="control-input"
+            id="tagline-input"
+            type="text"
+            maxlength="40"
+            placeholder="[ Passionate Developer ]"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">Color</label>
+          <div class="color-presets">
+            <button class="color-preset" data-color="#00ff41" style="background:#00ff41;" title="Hacker Green" aria-label="Hacker Green"></button>
+            <button class="color-preset" data-color="#00cfff" style="background:#00cfff;" title="Cyan" aria-label="Cyan"></button>
+            <button class="color-preset" data-color="#ffb700" style="background:#ffb700;" title="Amber" aria-label="Amber"></button>
+            <button class="color-preset" data-color="#ff4f4f" style="background:#ff4f4f;" title="Red" aria-label="Red"></button>
+            <button class="color-preset" data-color="#bf80ff" style="background:#bf80ff;" title="Purple" aria-label="Purple"></button>
+            <button class="color-preset" data-color="#ffffff" style="background:#ffffff;" title="White" aria-label="White"></button>
+            <div class="color-divider"></div>
+            <div class="custom-color-wrap">
+              <label class="custom-color-label" for="custom-color">custom</label>
+              <input type="color" id="custom-color" value="#00ff41" title="Custom color" aria-label="Custom color picker" />
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <button class="generate-btn" id="generate-btn">▶ Generate</button>
+          <button class="clear-btn" id="clear-btn">✕ Clear</button>
+        </div>
+        <p class="input-error" id="input-error"></p>
+
+      </aside>
+
+      <!-- ── Terminal preview ── -->
+      <section class="terminal" aria-label="Terminal preview">
+
+        <div class="titlebar">
+          <div class="dots" aria-hidden="true">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+          </div>
+          <span class="title-label" id="title-label">osmund@github ~ neofetch</span>
+          <div class="terminal-actions">
+            <button class="action-btn" id="copy-btn" title="Copy ASCII" aria-label="Copy ASCII art">⎘ copy</button>
+            <button class="action-btn" id="download-btn" title="Download as PNG" aria-label="Download as PNG">↓ save</button>
+          </div>
+        </div>
+
+        <div class="screen">
+          <div class="art-wrap">
+            <span class="ascii-art" id="ascii-art"></span><span class="cursor" id="cursor"></span>
+          </div>
+          <div class="subtitle" id="subtitle">[ Passionate Developer ]</div>
+          <button class="replay-btn" id="replay-btn" aria-label="Replay animation">↺ replay</button>
+        </div>
+
+      </section>
+
+    </div>
+
+    <footer class="page-footer">
+      <span>Made with <span class="footer-heart">♥</span> by Osmund &mdash; &copy; 2026</span>
+    </footer>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="js/font.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/animation.js"></script>
+
+</body>
+</html>
