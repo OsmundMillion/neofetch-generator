@@ -1,15 +1,22 @@
-# Neofetch Generator
+# 🖥️ Neofetch Generator
 
 > Type your name. Pick a color. Watch it render.
 
-A browser-based terminal nameplate generator. Enter any name (up to 10 characters), choose an accent color, and watch it animate column-by-column in a retro hacker terminal style — then copy the ASCII or save it as a PNG.
+A browser-based terminal nameplate generator. Enter any name (up to 10 characters), choose an accent color, and watch it animate column-by-column in a retro hacker terminal style - then copy the ASCII or save it as a PNG.
 
-**[→ Live Demo](#)** ← replace with your Vercel URL
+![Built with JavaScript](https://img.shields.io/badge/Built%20with-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML-5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS-3-1572B6?style=flat&logo=css3&logoColor=white)
+![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-brightgreen?style=flat)
+![Platform: Browser](https://img.shields.io/badge/Platform-Browser-4285F4?style=flat&logo=googlechrome&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-## Preview
+**[→ Live Demo](https://neofetch-generator.vercel.app/)**
 
-> Add a screenshot or GIF here after your first deploy.  
-> Tip: use the **↓ save** button in the app to grab a clean PNG of the terminal.
+## 📸 Preview
+
+![Preview](./assets/screenshot.png)
+![Demo](./assets/demo.gif)
 
 The animation also records beautifully as a GIF — great for GitHub profile READMEs, portfolio pages, or sharing on social. To capture it:
 
@@ -22,7 +29,7 @@ The animation also records beautifully as a GIF — great for GitHub profile REA
 
 Hit **↺ replay** before recording so the animation starts fresh from the beginning.
 
-## Features
+## ✨ Features
 
 - **Column-by-column animation** — renders like a real terminal, letter by letter across all rows simultaneously
 - **Full A–Z Unicode font** — built from box-drawing characters (`█`, `╔`, `═`, `║`) with no external font libraries
@@ -33,30 +40,17 @@ Hit **↺ replay** before recording so the animation starts fresh from the begin
 - **Fully responsive** — controls stack below the terminal on mobile
 - **Zero dependencies** — vanilla HTML, CSS, and JavaScript (except html2canvas for PNG export)
 
-## Running Locally
+## 📁 File Structure
 
-No build tools, no npm, no setup needed.
-
-```bash
-git clone https://github.com/OsmundMillion/neofetch-generator.git
-cd neofetch-generator
-```
-
-Then just open `index.html` in your browser. That's it.
-
-## File Structure
-
-```
 neofetch-generator/
 ├── index.html        # App shell — layout, inputs, terminal panel
 ├── style.css         # All styling — terminal theme, panels, controls
 └── js/
-    ├── font.js       # A–Z Unicode box-drawing letter map (data only)
-    ├── renderer.js   # Stitches letters into 6-row ASCII art arrays
-    └── animation.js  # Step engine, color, copy, download, validation
-```
+├── font.js       # A–Z Unicode box-drawing letter map (data only)
+├── renderer.js   # Stitches letters into 6-row ASCII art arrays
+└── animation.js  # Step engine, color, copy, download, validation
 
-## Tech Used
+## 🛠️ Tech Used
 
 | What | Why |
 |------|-----|
@@ -65,11 +59,10 @@ neofetch-generator/
 | Share Tech Mono | Google Font — closest free match to a real terminal |
 | html2canvas 1.4.1 | DOM-to-canvas for the PNG download feature |
 
-
-## Author
+## 👤 Author
 
 Made with ♥ by **Osmund** — © 2026
 
-## License
+## 📄 License
 
 MIT — see [LICENSE](./LICENSE) for details.
